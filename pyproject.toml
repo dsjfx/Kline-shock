@@ -1,0 +1,26 @@
+[project]
+name = "kline-shock"
+version = "0.1.0"
+description = "A software for analyzing the K-line trend of stocks."
+authors = [
+  {name = "dsjfx",email = "dgx_123@tutamail.com"}
+]
+license = "GNU GENERAL PUBLIC LICENSE"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "uvicorn (>=0.49.0,<0.50.0)",
+  "fastapi (>=0.138.0,<0.139.0)",
+  "akshare (>=1.18.64,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
